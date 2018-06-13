@@ -12,13 +12,16 @@ window.setState = (changes) => {
             /> , document.getElementById('root'));
         };
 
+        /*eslint no-restricted-globals:0*/
         let initialState = {
 
-            name: "Tharindu"
-
+            name: "Tharindu",
+            location: location.pathname.replace(/^\/?|\/$/g, "")
         };
 
         window.setState(initialState);
+
+
 
 
         registerServiceWorker();
