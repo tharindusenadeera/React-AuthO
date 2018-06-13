@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Main from './components/Main';
 
 class App extends Component {
     render() {
@@ -13,9 +14,9 @@ class App extends Component {
             className = "App-logo"
             alt = "logo" / >
             <
-            h1 className = "App-title" > Welcome to React, { this.props.name } < /h1> <
-            /header>
-
+            h1 className = "App-title" > Welcome to React, { this.props.name } < /h1> </header >
+            <
+            Main / >
             <
             /div>
         );
