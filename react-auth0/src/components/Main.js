@@ -6,9 +6,24 @@ export default class Main extends Component {
         return ( < div >
             <
             p className = "App-intro" >
-            To get started, edit < code > src / App.js < /code> and save to reload. < /
-            p > <
-            /div>
+            Hello, { this.props.name }
+            Here!!! < /
+            p >
+            <
+            p >
+            Do you want to see more... < a href = "/secret" > Click Here < /a>
+
+            <
+            /p> 
+
+
+            please login first... < br / >
+            <
+            button onClick = { this.props.auth.login } > login < /button>
+
+            <
+            /
+            div >
 
 
 

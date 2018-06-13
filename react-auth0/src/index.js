@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
+import Auth from './Auth';
+
+const auth = new Auth();
 
 let state = {};
 window.setState = (changes) => {
@@ -15,8 +18,9 @@ window.setState = (changes) => {
         /*eslint no-restricted-globals:0*/
         let initialState = {
 
-            name: "Tharindu",
-            location: location.pathname.replace(/^\/?|\/$/g, "")
+            name: "Tharindu ",
+            location: location.pathname.replace(/^\/?|\/$/g, ""),
+            auth
         };
 
         window.setState(initialState);

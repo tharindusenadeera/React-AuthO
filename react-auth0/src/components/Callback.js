@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 
-
-class Secret extends Component {
-
+export default class Callback extends Component {
     render() {
         return ( <
             div >
-            Secret <
+            Loading... <
             /div>
-        );
+        )
     }
-
 }
-
-export default Secret;
