@@ -4,5 +4,21 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+let state = {};
+window.setState = (changes) => {
+        state = Object.assign({}, state, changes);
+
+        ReactDOM.render( < App {...state }
+            /> , document.getElementById('root'));
+        };
+
+        let initialState = {
+
+            name: "Tharindu"
+
+        };
+
+        window.setState(initialState);
+
+
+        registerServiceWorker();
