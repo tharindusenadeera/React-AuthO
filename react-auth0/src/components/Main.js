@@ -16,14 +16,12 @@ export default class Main extends Component {
             <
             /p> 
 
-
-            please login first... < br / >
             <
-            button onClick = { this.props.auth.login } > login < /button>
-
+            div > please login first... < br / >
             <
-            /
-            div >
+            button onClick = { this.props.auth.login } > login < /button> </div >
+            <
+            /div>
 
 
 
